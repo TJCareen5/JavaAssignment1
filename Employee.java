@@ -13,12 +13,7 @@ public class Employee{
     private String lastName; /** instance variable that stores the last name */
     private double monthlySalary; /** instance variable for Monthly Salary */
 
-    /**
-     * constructor
-     * @param fname
-     * @param lname'
-     * @param msalary'
-     */
+    /** constructor */
     public Employee(String fname, String lname, double msalary)
     {
         firstName = fname; /** initialize firstName */
@@ -30,76 +25,44 @@ public class Employee{
             monthlySalary = 0.0;
     }
 
-    /**
-     * method to set the first name
-     * @param fname'
-     */
+    /** method to set the first name */
     public void setFirstName(String fname)
     {
         firstName = fname;	/** store the first name */
     }
-
-    /**
-     * method to get first name
-     * @return firstName
-     */
+    /** method to get first name */
     public String getFirstName()
     {
         return firstName;
     }
-
-    /**
-     * method to set the last name
-     * @param lname'
-     */
+    /** method to set the last name */
     public void setLastName(String lname)
     {
         lastName = lname;	/** store the last name */
     }
-
-    /**
-     * method to get last name
-     * @return lastName
-     */
+    /** method to get last name */
     public String getLastName()
     {
         return lastName;
     }
-
-    /**
-     * method to set the monthly salary
-     * @param msalary'
-     */
+    /** method to set the monthly salary */
     public void setMonthlySalary(double msalary)
     {
         monthlySalary = msalary;	/** store the monthly salary */
     }
-
-    /**
-     * method to get monthly salary
-     * @return monthlySalary
-     */
+    /** method to get monthly salary */
     public double getMonthlySalary()
     {
         return monthlySalary;
     }
-
-    /**
-     * method to get yearly salary
-     * @return yearlySalary
-     * <pre> @code monthlySalary * 12 </pre>
-     */
+    /** method to get yearly salary */
     public double getYearlySalary()
     {
         double yearlySalary = monthlySalary * 12;
         return yearlySalary;
     }
 
-    /**
-     * method to get yearly salary after giving 10% raise
-     * @return raiseSalary
-     * <pre> @code (monthlySalary + (monthlySalary * 0.1)) * 12 </pre>
-     */
+    /** method to get yearly salary after giving 10% raise */
     public double getRaiseSalary() {
         double raise =  monthlySalary * 0.1 ;
         double raiseSalary = (monthlySalary + raise) * 12;
